@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8;"/>
+		<title>Nemanja Glogovac | kontakt</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript">
+			function provera()
+			{
+				var imePrezime = document.getElementById('tbImePrezime').value;
+				
+				var reImePrezime = /^[A-Z][a-z]{2,10}\s[A-Z][a-z]{2,10}$/;
+				
+				var greske = new Array();
+				var podaci = new Array();
+				
+				if(!imePrezime.match(reImePrezime))
+				{
+					greske.push("Ime i prezime nije ispavno!");
+				}
+				else
+				{
+					podaci.push("Ime i prezime: "+imePrezime);
+				}
+				
+				var naslov = document.getElementById('tbNaslov').value;
+				var reNaslov = /^(\w|\s|\-|[A-Z])+$/;
+				
+				if(!naslov.match(reNaslov))
+				{
+					greske.push('Naslov nije ispravan!');
+				}
+				else
+				{
+					podaci.push('Naslov: ' + naslov );
+				}
+				
+				if(greske.length >0)
+				{
+					var tekst = "<ul>";
+					for(var i=0; i < greske.length; i++)
+					{
+						tekst+= "<li>"+ greske[i]+"</li>";
+					}
+					tekst += "</ul>";
+					document.getElementById('prikaz').innerHTML = tekst;
+				}
+				else
+				{
+					var tekst = "<ul>";
+					for(var i=0; i< podaci.length; i++)
+					{
+						tekst+="<li>"+podaci[i]+"</li>";
+					}
+					tekst+= "</ul>";
+					document.getElementById('prikaz').innerHTML = tekst;
+				}
+			}
+		
+			function nav()
+			{
+				$('div #navigacija ul li').mouseover(function(){
+					$(this).find('ul:first').show();
+				});
+				
+				$('div #navigacija ul li').mouseleave(function(){
+					$('div #navigacija ul li ul').hide();
+				});
+				
+				$('div #navigacija ul li ul').mouseleave(function(){
+					$('div #navigacija ul li ul').hide();
+				});
+			}
+			
+			$(document).ready(function(){
+				nav();
+			});
+		
+		</script>
+		
+	</head>
+	<body>
+		<div id="omot">
+			<div id="zaglavlje">
+				<a href="index.html">Nemanja Glogovac</a>
+			</div>
+			
+			<div id="navigacija">
+				<ul>
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li>
+						<a href="#">Galerije</a>
+						<ul class="submenu">
+							<li>
+								<a href="galerija1.html">Galerija 1</a>
+							</li>
+							<li>
+								<a href="galerija2.html">Galerija 2</a>
+							</li>	
+						</ul>
+					</li>
+					<li class="aktivan_link"><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</div>
+			
+			<div id="strana">
+				<div id="strana_razmak">
+					<div id="leva_kolona">
+						<div id="sadrzaj_omot">
+							<div class="post">
+								<h2 class="naslov">Kontakt</h2>
+								<p class="podnaslov">
+									<span class="ime">	</span>
+									<span class="naziv_posta">Forma</span>
+								</p>
+								<div style="clear:both;"></div>
+								<div class="entry">
+									<form action="mailto:test@test.com">
+										<table style="margin: 0 auto;">
+											<tr>
+												<th colspan="2" align="center">Kontakt</th>
+											</tr>
+											<tr>
+												<td>Ime i prezime:</td>
+												<td>
+													<input type="text" id="tbImePrezime" class="text_box"/>
+												</td>
+											</tr>
+											<tr>
+												<td>Naslov:</td>
+												<td>
+													<input type="text" id="tbNaslov" class="text_box"/>
+												</td>
+											</tr>
+											<tr>
+												<td>Tekst poruke:</td>
+												<td>
+													<textarea id="taPoruka" class="text_box"></textarea>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" align="center">
+													<input type="button" id="btnPosalji" value="Pošalji" class="button" onClick="provera();"/>
+												</td>
+											</tr>
+										</table>
+									</form>
+									<div id="prikaz">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="desna_kolona">
+						<ul>
+							<li>
+								<div id="pretraga">
+									<form action="#">
+										<input type="text" id="pretraga_text"/>
+										<input type="submit" id="pretraga_submit" value="Pretraga"/>
+									</form>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li>
+								<h2 style="padding-top:30px;">Moj prvi sajt</h2>
+								<p style="padding-top:50px;">Ovaj sajt je rađen u okviru praktične nastave na Visokoj ICT školi.</p>
+							</li>
+							<li>
+								<h2>Linkovi</h2>
+								<ul>
+									<li>
+										<a href="http://www.google.com">Google</a>
+									</li>
+									<li>
+										<a href="http://www.beograd.rs">Beograd</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h2>Društvene mreže</h2>
+								<ul>
+									<li>
+										<a href="http://www.facebook.com">
+											<img src="slike/fb.png"/> Facebook
+										</a>
+									</li>
+									<li>
+										<a href="http://www.twitter.com">
+											<img src="slike/twitter.png"/> Twitter
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div style="clear:both;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="futer">
+			<p>
+				Copyright (c) 2017. Design by Nemanja Glogovac
+			</p>
+		</div>
+	</body>
+</html>
