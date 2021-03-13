@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "name" : "screen",
+        "values" : ["5.7'","5.8'","5.9'","6.0'","6.1'","6.2'","6.3'","6.4'"]
+    },
+    {
+        "id" : 2,
+        "name" : "processor",
+        "values" : ["Dual-core","Quad-core","Octa-core"]
+    },
+    {
+        "id" : 3,
+        "name" : "camera",
+        "values" : ["8MP'","12MP'","13MP","14MP"]
+    },
+    {
+        "id" : 4,
+        "name" : "ram",
+        "values" : ["2GB","4GB","6GB","8GB"]
+    }
+]

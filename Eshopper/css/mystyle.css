@@ -1,0 +1,142 @@
+/***************************** index.html *****************************************************************/
+
+.carousel-inner img{
+    max-height: 350px; 
+    margin: 0px auto;
+}
+
+.product-okvir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.single-products .productinfo div{
+    
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.single-products .productinfo p{
+    font-size: 110%;
+    color: rgb(255, 165,0);
+    margin: 5% 0%;
+}
+
+.single-products .productinfo img{
+    max-width: 80%;
+    padding: 50px;
+    max-height: 405px;
+}
+.single-products .productinfo h4{
+    font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+.product-okvir h4{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+.proizvod-detalji{
+    width: 80%;
+    margin: 0px auto;
+    transition: 1000ms;
+    margin-top: 20%;
+    display: none;
+    height: 0;
+}
+
+
+.product-okvir:hover .proizvod-detalji{
+    display: block;
+    height: 100%;
+}
+
+.proizvod-detalji p{
+    font-size: 130%;
+    display: block;
+    word-wrap: wrap;
+    margin: 14% 0%;
+}
+
+.proizvod-detalji p i{
+    font-size: 150%;
+}
+
+/*======================================= shop.html  *****************************************************/
+
+#products-all .product-style img{
+    max-width: 80%;
+    padding: 50px;
+    max-height: 304px;
+}
+
+#sort{
+    float: right;
+}
+
+#btnApply{
+    
+    background-color: orange;
+    color: white;
+    border: 0px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+   
+}
+
+
+/*======================================= cart.html  *****************************************************/
+
+.cart_product img{
+    max-height: 200px;
+}
+
+
+/************************************* product-details.html *****************************************/
+
+#okvir{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slika-info{
+    max-width: 100%;
+    max-height: 500px;
+    
+    
+}
+
+/************************************ checkout.html **********************************************************/
+
+.footer-cho{
+    margin-top: 15%;
+}
+
+#greske{
+    margin-top: 5%;
+}
+
+#greske ul li{
+    color: red;
+}
+
+
+/************************************ oAutoru.html **********************************************************/
+
+#oAutoru{
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+}
+
+#oAutoru h2{
+    text-align: center;
+}
+
