@@ -1,0 +1,185 @@
+.property-sidebar h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #19191a;
+    margin-bottom: 34px;
+}
+.property-sidebar .sidebar-btn {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.property-sidebar .sidebar-btn .bt-item {
+    width: 50%;
+    float: left;
+}
+.property-sidebar .sidebar-btn .bt-item input[type=radio] {
+    display: none;
+}
+.property-sidebar .sidebar-btn .bt-item input[type=radio]:checked+label {
+    background: #2cbdb8;
+    color: #ffffff;
+}
+.property-sidebar .sidebar-btn label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #EBEBEB;
+    color: #707079;
+    text-align: center;
+    cursor: pointer;
+    padding: 14px 0 12px;
+}
+.property-sidebar .sidebar-search {
+    margin-bottom: 75px;
+}
+.property-sidebar .sidebar-search .nice-select {
+    width: 100%;
+    height: 50px;
+    background: #F2F4F5;
+    border-radius: 0;
+    border: 1px solid #ebebeb;
+    line-height: 46px;
+    margin-bottom: 20px;
+}
+.property-sidebar .sidebar-search .nice-select:after {
+    border-bottom: 2px solid #aaaab3;
+    border-right: 2px solid #aaaab3;
+    height: 7px;
+    right: 20px;
+    margin-top: -5px;
+    width: 7px;
+}
+.property-sidebar .sidebar-search .nice-select span {
+    font-size: 16px;
+    color: #707079;
+}
+.property-sidebar .sidebar-search .nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+}
+.property-sidebar .sidebar-search .room-size-range {
+    width: 100%;
+    margin-bottom: 17px;
+}
+.property-sidebar .sidebar-search .room-size-range .price-text {
+    margin-bottom: 12px;
+}
+.property-sidebar .sidebar-search .room-size-range .price-text label {
+    display: inline-block;
+    font-size: 14px;
+    color: #707079;
+    margin-bottom: 0;
+}
+.property-sidebar .sidebar-search .room-size-range .price-text input {
+    display: inline-block;
+    width: 165px;
+    font-size: 16px;
+    color: #19191a;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.property-sidebar .sidebar-search .room-size-range .ui-widget.ui-widget-content {
+    background: #e5e5e5;
+    border-radius: 0;
+}
+.property-sidebar .sidebar-search .price-range-wrap {
+    width: 100%;
+    margin-bottom: 35px;
+}
+.property-sidebar .sidebar-search .price-range-wrap .price-text {
+    margin-bottom: 9px;
+}
+.property-sidebar .sidebar-search .price-range-wrap .price-text label {
+    display: inline-block;
+    font-size: 14px;
+    color: #707079;
+    margin-bottom: 0;
+}
+.property-sidebar .sidebar-search .price-range-wrap .price-text input {
+    display: inline-block;
+    width: 165px;
+    font-size: 16px;
+    color: #19191a;
+    border: none;
+    background: transparent;
+}
+.property-sidebar .sidebar-search .price-range-wrap .ui-widget.ui-widget-content {
+    background: #e5e5e5;
+    height: 4px;
+    border: none;
+    border-radius: 0;
+}
+.property-sidebar .sidebar-search button.search-btn {
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+    background: #2cbdb8;
+    color: #ffffff;
+    border: none;
+    border: 1px solid #2cbdb8;
+    cursor: pointer;
+}
+
+
+.property-sidebar .sidebar-search .room-size-range {
+    width: 100%;
+    margin-bottom: 17px;
+}
+.property-sidebar .sidebar-search .room-size-range .price-text {
+    margin-bottom: 12px;
+}
+.property-sidebar .sidebar-search .room-size-range .price-text label {
+    display: inline-block;
+    font-size: 14px;
+    color: #707079;
+    margin-bottom: 0;
+}
+.property-sidebar .sidebar-search .room-size-range .price-text input {
+    display: inline-block;
+    width: 165px;
+    font-size: 16px;
+    color: #19191a;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.property-sidebar .sidebar-search .room-size-range .ui-widget.ui-widget-content {
+    background: #e5e5e5;
+    border-radius: 0;
+}
+.property-sidebar .sidebar-search .price-range-wrap {
+    width: 100%;
+    margin-bottom: 35px;
+}
+.property-sidebar .sidebar-search .price-range-wrap .price-text {
+    margin-bottom: 9px;
+}
+.property-sidebar .sidebar-search .price-range-wrap .price-text label {
+    display: inline-block;
+    font-size: 14px;
+    color: #707079;
+    margin-bottom: 0;
+}
+.property-sidebar .sidebar-search .price-range-wrap .price-text input {
+    display: inline-block;
+    width: 165px;
+    font-size: 16px;
+    color: #19191a;
+    border: none;
+    background: transparent;
+}
+.property-sidebar .sidebar-search .price-range-wrap .ui-widget.ui-widget-content {
+    background: #e5e5e5;
+    height: 4px;
+    border: none;
+    border-radius: 0;
+}
