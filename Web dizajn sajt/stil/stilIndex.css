@@ -1,116 +1,136 @@
 @font-face {
     src: url("RobotoCondensed-Regular.ttf");
     font-family: "RobotoCondensed-Regular";
-}
+  }
+
 @font-face {
     src: url("Ubuntu-Regular.ttf");
     font-family: "Ubuntu-Regular";
 }
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
 body{
     font-size: 100%;
     font-family: "RobotoCondensed-Regular", sans-serif;
 }
+
 ul{
     list-style-type: none;
     font-family: "Ubuntu-Regular", sans-serif;
 }
+
 a {
     text-decoration: none;
     cursor: pointer;
     color:white;
 }
+
 .cistac{
     clear: both;
 }
+
+
 div{
     display: block;
 }
+
 #header{
     width: 100%;
     height: 11%;
+    background-color: rgba(12, 0, 5, 0.4);
+    position: fixed;
     top: 0px;
     left: 0px;
-
-    z-index: 5;
+    z-index: 3;
     color: #f5f5dc;
-    overflow: hidden;
-    transition: 1s;
-    background-color: transparent;
-    position: absolute;
-    padding-top: 2%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    
 }
-.okvir
-{
+.okvir{
     width: 90%;
     margin: 0px auto;
     /*border: 2px dotted black;*/
     position: relative;
     top: 20%;
 }
-.header-sadrzaj
-{
+
+.header-sadrzaj{
     width: 33%;
     display: inline-block;
-    font-size: 110%
-;
+    font-size: 110%;
+    
 }
-.header-sadrzaj ul li a {
+
+.header-sadrzaj ul li a{
     font-weight: 500;
     font-family: sans-serif;
-    color: beige;
+    color: beige; 
+    
 }
-.header-sadrzaj ul li {
+
+.header-sadrzaj ul li{
     display: inline-block;
     margin-right: 20px;
+    
 }
-#centralni-deo {
+
+#centralni-deo{
     text-align: center;
 }
-#centralni-deo ul li a {
+
+#centralni-deo ul li a{
     padding-bottom: 10px;
 }
-#centralni-deo ul li a:hover {
 
+#centralni-deo ul li a:hover{
     border-bottom: 3px solid beige;
 }
+
 #lista-mreze {
     text-align: right;
 }
+
 .okvir a:hover{
     color: rgba(118, 143, 139, 0.884)
 }
-/*----------------------------------------------------------------------------
---------------------------------------*/
-#sredina-pozadina-tamno{
-    background-color: rgba(12, 0, 5, 0.4);
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+#sredina-pozadina2{
+    background-color:  rgba(12, 0, 5, 0.4);
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 2;
     display: flex;
     justify-items: center;
     align-items: center;
 }
-#pozadina-slika{
+
+.pozadina-slika{
+    display: inline-block;
     width: 100%;
     height: 100%;
     background-image: url(../slike/index/pozadina1.jpg);
     background-size: cover;
-    position: relative;
-    overflow: hidden;
     display: flex;
     justify-content: center;
 }
+
+
 #pozdina-tekst{
     width: 50%;
-    height: 30%;
+    height: 30%;  
     margin: 0px auto;
     color: white;
 }
+
+
 #pozdina-tekst h1{
     font-size: 300%;
     text-align: center;
@@ -120,8 +140,9 @@ div{
     margin-top: 30px;
     font-size: 150%;
     text-align: center;
-
+    
 }
+
 #strelica-header{
     height: 100px;
     width: 100px;
@@ -133,6 +154,7 @@ div{
     padding: 5px;
     z-index: 3;
 }
+
 #arrow-up{
     position: absolute;
     font-size: 90px;
@@ -140,21 +162,25 @@ div{
     top: 8px;
     left: 13px;
 }
+
+
 .okvir-sadrzaj{
-    position: relative;
-    margin: 0px auto;
+    position: relative;    
+    margin: 0px auto;    
     width: 70%;
 }
+
 #sredina-content {
     height: 80%;
     width: 70%;
-    margin-top: 100px;
+    margin-top: 100px;   
     display: flex;
-
+    
 }
+
 #sredina-content-levo {
     height: 100%;
-    width: 50%;
+    width: 50%;   
     background-image: url(../slike/index/pozadina2.jpg);
     background-size: cover;
 }
@@ -165,81 +191,88 @@ div{
     display: flex;
     justify-items: center;
 }
-#sredina-content-desno-content {
+
+#sredina-content-desno-content{
     width: 80%;
-    height: 80%;
+    height: 80%;  
     margin: auto;
     justify-content: center;
     font-size: 130%;
 }
-#sredina-content-desno-content p
-{
+
+#sredina-content-desno-content p{
     padding-top: 10%;
 }
+
 #sredina-slajder {
     width: 100%;
     height: 45%;
     background-color: rgb(197, 209, 236);
     margin-top: 100px;
-    display: flex;
+    display: flex;  
     justify-content: center;
 }
-.sredina-slajder-slike img
-{
+
+.sredina-slajder-slike img{
     width: 100%;
     padding: 5%;
     transition: 0.5s;
 }
-.sredina-slajder-slike img:hover
-{
+
+.sredina-slajder-slike img:hover{
     padding: 0;
 }
+
 .sredina-slajder-slike {
     width: 23%;
 }
-#sredina-slajder-okvir{
 
+#sredina-slajder-okvir{
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.sredina-slajder-slike-content{
+.sredina-slajder-slike-content {
     width: 100%;
     height: 100%;
 }
-#kontakt
-{
+
+#kontakt{
     height: 130%;
     margin-top: 5%;
 }
-#okvir-kontakt
-{
-    height: 20%;
+
+#okvir-kontakt {
+    height: 20%; 
 }
-#naslov
-{
+
+#naslov {
     width: 100%;
-    height: auto;
+    height: auto;   
     text-align: center;
     font-size: 150%;
 }
+
 #okvir-slika-lokacija {
     margin-top: 5%;
     height: 500px;
     width: 100%;
 }
+
 #kontat-slika {
     width: 100%;
     height: auto;
 }
-#kontakt-dole
-{
+
+#kontakt-dole{
     display: flex;
     justify-content: space-between;
     padding-top: 5%;
 }
-.kontakt-dole-content {
+
+.kontakt-dole-content{
     width: 30%;
     height: 200px;
     font-weight: 500;
@@ -248,40 +281,49 @@ div{
     text-align: center;
 }
 
-/*----------------------------------------------------------------------------
--------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+
 #footer{
     width: 100%;
     height: 30%;
     background-color: rgb(12, 19, 31);
     position: relative;
     bottom: 0%;
-
+    
 }
+
 #footer-okvir{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
     padding-top: 1.5%;
 }
+
 .footer-content {
     width: 20%;
     height: 80%;
 }
+
 #footer-email{
     color:white;
 }
+
 .footer-content ul li a{
     color: rgb(96, 132, 216);
 }
+
+
 #footer-okvir .footer-content:nth-child(4) a{
     color: white;
 }
+
+
 .footer-content ul li {
     padding-top: 4%;
     color: white;
     font-size: 90%;
     text-align: center;
 }
+
 .footer-ikone{
     font-size: 100%;
 }

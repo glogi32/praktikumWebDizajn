@@ -101,6 +101,7 @@ div{
 
 /*------------------------------------------------------------------------------------------------------------------*/
 
+
 .pozadina-slika{
     display: inline-block;
     width: 50%;
@@ -110,30 +111,34 @@ div{
 }
 
 #pozadina-slika-levo{
-
-    background-color: rgb(197, 209, 236);
+    color: white;
+    background-color: rgb(12, 19, 31);
 }
 
 #pozadina-slika-levo-content{
     width: 80%;
     height: 30%;
     margin: 0px auto;
-    margin-top: 35%;
+    margin-top: 20%;
     
 }
 
 #pozadina-slika-levo-content h1 {
-    font-size: 400%;
+    font-size: 350%;
+}
+
+#pozadina-slika-levo-content p:first-of-type{
+    margin-top: 12%;
 }
 
 #pozadina-slika-levo-content p{
-    font-size: 150%;
+    font-size: 130%;
     margin-top: 5%;
 }
 
 #pozadina-slika-desno{
     float: right; 
-    background-image: url(../slike/meni/pozadina-meni.jpg);
+    background-image: url(../slike/akcije/pozadina-desno.jpg);
     background-size: cover;
     position: relative;
 }
@@ -160,6 +165,7 @@ div{
     padding: 5px;
     z-index: 3;
 }
+
 #arrow-up{
     position: absolute;
     font-size: 90px;
@@ -169,154 +175,82 @@ div{
 }
 
 
-.okvir-sredina{
-    position: relative;    
-    margin: 0px auto;    
-    width: 80%;
-}
-
-#srednia-meni-naslov{
-    height: 15%;
-    padding: 7% 0% 6% 0%;
-    font-size: 150%;
-}
-
-#sredina-meni-okvir{
-    height: 230%;
-    
-}
-
-.sredina-meni-blok{
-    width: 47.5%;
-    height: 47.5%;
-    background-color: coral;
-    position: absolute;
-}
-
-.gore-levo{
-    top: 0%;
-    left: 0%;
-}
-
-.gore-desno{
-    top: 0%;
-    right: 0%;
-}
-
-.dole-desno{
-    bottom: 0%;
-    right: 0%;
-}
-
-.dole-levo{
-    bottom: 0%;
-    left: 0%;
-}
-
-
-.sredina-meni-slika{
-    width: 100%;
-    height: 60%;
-    background-size: cover;
-}
-
-.gore-levo-slika{
-    background-image: url(../slike/meni/meni-slika-gore-levo.jpg);
-}
-
-.gore-desno-slika{
-    background-image: url(../slike/meni/meni-slika-gore-desno.jpg);
-}
-
-.dole-levo-slika{
-    background-image: url(../slike/meni/meni-slika-dole-levo.jpg);
-}
-
-.dole-desno-slika{
-    background-image: url(../slike/meni/meni-slika-dole-desno.jpg);
-}
-
-
-.sredina-meni-tekst{
-    width: 100%;
-    height: 40%;
-    background-color: rgb(19,20,31);
-    color:white;
-    padding: 6%;
-    font-size: 130%;
-    line-height: 1.4;
+#sredina-gore{
     position: relative;
-}
-
-.sredina-meni-tekst p{
-    margin-top: 4%;
-}
-
-.srednia-meni-button a{
-    color: black;
-}
-
-.srednia-meni-button{
-    width: 35%;
-    height: 20%;
-    background-color: rgb(197, 209, 236);
-    border-radius: 10%;
-    position: absolute;
-    bottom: 7%;
-    padding: 3%;
-}
-
-#sredina-sadrzaj{
     width: 100%;
-    height: 160%;
+    height: 150%;
 }
 
-#sredina-sadrzaj-naslov{
-    height: 5%;
-    text-align: center;
-    padding-top: 7%;
-    font-size: 150%;
-}
-
-#sredina-sadrzaj-slika-okvir{
-    height: 60%;
-    width: 100%;  
-    padding-top: 7%;
-}
-
-#sredina-sadrzaj-slika{
-    background-image: url(../slike/meni/meni-sadrzaj.jpg);
-    background-size: cover;
-    display: flex;
-    align-content: center;
-    width: 35%;
-    height: 100%;
-    margin: 0px auto;
-}
-
-#sredina-sadrzaj-tekst-okvir{
-    width: 100%;
-    height: 35%;
-}
-
-#sredina-sadrzaj-tekst{
-    margin: 0px auto;
+#sredina-gore-naslov{
     width: 50%;
+    height: 30%;
+    margin: 0px auto;
+    margin-top: 8%;
+    font-size: 140%;
+}
+
+
+#sredina-gore-naslov p{
+    margin-top: 5%;
+}
+
+#sredina-gore-dogadjaji{
+    margin-top: 2%;
+}
+
+.dogadjaj{
+    width: 85%;
+    height: 13%;
+    margin: 0px auto;
+    border-bottom: 1px dotted grey;
+    font-size: 180%;
+    display: flex;
+    align-items: center;
+}
+
+.dogadjaj p:nth-child(2){
+    position: absolute;
+    left: 55%;
+}
+
+#sredina-dole{
+    width: 100%;
+    height: 140%;
+    background-color: rgb(12, 19, 31);
+}
+
+#sredina-dole-naslov{
     text-align: center;
-    font-size: 120%;
+    color: white;
+    width: 100%;
+    font-size: 180%;
 }
 
-#sredina-sadrzaj-tekst h1{
-    padding-top: 5%;
+#sredina-dole-naslov h1{
+    padding-top: 4%;
 }
 
-#sredina-sadrzaj-tekst p{
-    padding-top: 3%;
-    color: rgb(94,95,96);
+#sredina-dole-slika{
+    width: 25%;
+    height: 45%;
+    background-image: url(../slike/akcije/pozadina-dole.jpg);
+    background-size: cover;
+    margin: 3% auto;
 }
 
+#sredina-dole-tekst{
+    width: 50%;
+    height: 50%;
+    margin: 0% auto;
+    color: white;
+    text-align: center;
+    font-size: 130%;
+}
 
-
+#sredina-dole-tekst p{
+    margin-top: 3%;
+    line-height: 1.5;
+}
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
@@ -326,7 +260,7 @@ div{
     background-color: rgb(12, 19, 31);
     position: relative;
     bottom: 0%;
-    margin-top: 5%;
+    
 }
 
 #footer-okvir{

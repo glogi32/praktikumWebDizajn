@@ -1,6 +1,0 @@
-[0211/004641.990:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: The pipe has been ended. (0x6D)
-[0211/004641.990:ERROR:file_io_win.cc(180)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Access is denied. (0x5)
-[0310/003035.342:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: The pipe has been ended. (0x6D)
-[0310/003035.342:ERROR:file_io_win.cc(180)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Access is denied. (0x5)
-[0310/132144.891:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: The pipe has been ended. (0x6D)
-[0310/132144.891:ERROR:file_io_win.cc(180)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Access is denied. (0x5)
