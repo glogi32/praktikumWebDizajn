@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	    <title>Glaerija 2</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="jquery.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="jquery.lightbox.css"/>
+		
+		<script rel="stylesheet" type="text/css" href="jquery.lightbox.min.js"></script>
+		<script type="text/javascript">
+			function nav()
+			{
+				$('div #navigacija ul li').mouseover(function(){
+					$(this).find('ul:first').show();
+				});
+				
+				$('div #navigacija ul li').mouseleave(function(){
+					$('div #navigacija ul li ul').hide();
+				});
+				
+				$('div #navigacija ul li ul').mouseleave(function(){
+					$('div #navigacija ul li ul').hide();
+				});
+			}
+			
+			$(document).ready(function(){
+				nav();
+				
+				$('#foto_pokretno').toggle(
+					function(){
+						var scrollAmount = $(this).width() - $(this).parent().width();
+						$(this).animate({'left' : '-=' + scrollAmount}, 'slow')
+					},
+					function(){
+						$(this).animate({'left': '0'}, 'slow');
+					}
+				);
+			});
+			</script>
+	</head>
+	<body>
+		<div id="omot">
+			<div id="zaglavlje">
+				<a href="index.html">Nemanja Glogovac</a>
+			</div>
+			<div id="navigacija">
+					<ul>
+					   <li ><a href="index.html">Početna</a></li>
+					   <li><a href="blog.html">Blog</a></li>
+					   <li class="aktivan_link">
+							<a href="#">Galerija</a>
+							<ul class ="submenu">
+								<li>
+									<a href="galerija1.html">Galerija1</a>
+								</li>
+								<li>
+									<a href="galerija2.html">Galerija2</a>
+								</li>
+							</ul>
+					   </li>
+					   <li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+			</div>
+			<div id="strana">
+				<div id="strana_razmak">
+					<div id="leva_kolona">
+						<div class="sadrzaj_omot">
+							<div class="post"> 
+								<h2 class="naslov">Galerija2</h2>
+									<p calss="podnaslov">
+										<span class="ime">Nemanja Glogovac</span>
+										<span class="naziv_posta">02.03.2017.</span>
+									</p>
+								<div style="clear: both;"></div>
+								<div class="entry">
+									<div id="fotografije">
+										<div id="foto_pokretno">
+											<img src="slike/g2s1.jpg" alt="slika1"/>
+											<img src="slike/g2s2.jpg" alt="slika2"/>
+											<img src="slike/g2s3.jpg" alt="slika3"/>
+											<img src="slike/g2s4.jpg" alt="slika4"/>
+											<img src="slike/g2s5.jpg" alt="slika5"/>
+											<img src="slike/g2s6.jpg" alt="slika6"/>
+											<img src="slike/g2s7.jpg" alt="slika7"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="desna_kolona">
+						<ul>
+							<li>
+								<div id="pretraga">
+									<form action="#">
+										<input type="text" id="pretraga_text"/>
+										<input type="submit" id="pretraga_submit" value="Pretraga"/>
+									</form>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li>
+								<h2 style="padding-top: 50px;">Moj prvi sajt</h2>
+								<p style="padding-top: 50px;">Ovaj sajt je radjen u okviru prakticne nastave na Visokoj ICT školi</p>
+							</li>
+							<li>
+								<h2>Linkovi</h2>
+								<ul>
+									<li>
+										<a href="http://www.google.com">Google</a>
+										
+									</li>
+									<li>
+										<a href ="http://www.beograd.rs">Beograd</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h2>Drustvene mreze</h2>
+								<ul>
+									<li>
+										<a href="http://www.facebook.com">
+											<img src="slike/fb.png"/>Facebook
+										</a>
+									</li>
+									<li>
+										<a href="http://www.twitter.com">
+											<img src="slike/twitter.png"/>Twitter
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div style="clear:both;">
+					
+					</div>
+			</div>
+		</div>
+		<div id="futer">
+			<p>
+				Copyright (c) 2017. Design by Nemanja glogovac
+			</p>
+		</div>
+	</body>
+</html>
