@@ -1,0 +1,5 @@
+@include("admin/fixed/head")
+@include("admin/fixed/sidebar")
+@include("admin/fixed/nav")
+@yield("middle")
+@include("admin/fixed/footer")

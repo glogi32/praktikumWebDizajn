@@ -1,0 +1,5 @@
+@include("fixed/head")
+@include("fixed/authForms")
+@yield("middle")
+@include("fixed.partner-carusel")
+@include("fixed/footer")
