@@ -1,0 +1,23 @@
+<rss version="2.0">
+    <channel>
+        <item>
+            <title>Meni iznenađenja</title>
+            <description>
+                Po dogovoru, nudimo između 4 i 10 tečajeva raznih posebno odabranih jela.
+                Svi sastojci su pažljivo odabrani kako bi osetili vaša čula u mediteranskoj kuhinji Italije.
+                Saznajte bez obaveza u našem restoranu ili nas nazovite.
+            </description>
+            <link>https://restoran-geranio.000webhostapp.com/akcije.html</link>
+        </item>
+        <item>
+            <title>Naše akcije</title>
+            <description>
+                Nekoliko puta godišnje organizujemo razne događaje oko 
+                italijanske kuhinje. Svakome ste srdačno pozvani i dobrodošli.
+                 Uživajte zajedno sa nama nezaboravne večeri pune duhovitih, 
+                 mediteranskih jela i uronite u gostoljubivost Sicilije.
+            </description>
+            <link>https://restoran-geranio.000webhostapp.com/akcije.html</link>
+        </item>
+    </channel>
+</rss>

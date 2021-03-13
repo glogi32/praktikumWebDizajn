@@ -1,0 +1,189 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.cistac{
+    clear: both;
+}
+
+
+div{
+    display: block;
+}
+
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(12, 0, 5, 0.4);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    color: #f5f5dc;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+.okvir{
+    width: 90%;
+    margin: 0px auto;
+    /*border: 2px dotted black;*/
+    position: relative;
+    top: 17px;
+}
+
+.header-sadrzaj{
+    width: 33%;
+    display: inline-block;
+    
+}
+
+.header-sadrzaj ul li a{
+    font-weight: 300;
+    font-family: sans-serif;
+    color: beige; 
+    
+}
+
+.header-sadrzaj ul li{
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 20px;
+    
+}
+
+#centralni-deo{
+    text-align: center;
+}
+
+#centralni-deo ul li a{
+    padding-bottom: 10px;
+}
+
+#centralni-deo ul li a:hover{
+    border-bottom: 3px solid beige;
+}
+
+#lista-mreze {
+    text-align: right;
+}
+
+.okvir a:hover{
+    color: rgba(118, 143, 139, 0.884)
+}
+
+/*--------------------------------------------------------------------*/
+
+.pozadina-slika{
+    display: inline-block;
+    width: 50%;
+    height: 900px;
+    
+}
+
+#pozadina-slika-levo{
+    
+    
+    position: relative;
+}
+
+#pozadina-slika-desno{
+    float: right; 
+    background-color: black;
+    position: relative;
+    opacity: 0.5;
+    
+    
+}
+
+#tekst{
+    width: 70%;
+    height: 30%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: cornflowerblue;
+}
+
+#okvir-tekst{
+    padding: 40px;
+}
+
+#strelica-header{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(93, 121, 116, 0.4);
+    border-radius: 50% 50%;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    padding: 5px;
+    
+}
+
+#arrow-up{
+    position: absolute;
+    font-size: 90px;
+    color: beige;
+    top: 10px;
+    left: 15px;
+}
+
+#strelica-sredina-dole{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;     
+}
+
+#arrow-down{
+    font-size: 35px;
+    color: #dfdfbd;
+    bottom: 0px;
+    left: 0px;
+}
+
+.okvir-sadrzaj{
+    position: relative;    
+    margin: 0px auto;    
+    align-self: center; 
+}
+
+#sredina-content {
+    height: 80%;
+    width: 80%;
+    background-color: cadetblue;
+    margin-top: 100px;   
+    display: flex;
+}
+
+#sredina-content-levo {
+    height: 100%;
+    width: 50%;
+    opacity: 0.5;
+    background-image: url(../slike/logo1.jpg);
+    background-size: cover;
+      
+    
+}
+
+#sredina-content-desno {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(51, 88, 138);  
+     
+}

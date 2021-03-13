@@ -1,0 +1,334 @@
+@font-face {
+    src: url("RobotoCondensed-Regular.ttf");
+    font-family: "RobotoCondensed-Regular";
+}
+@font-face {
+    src: url("Ubuntu-Regular.ttf");
+    font-family: "Ubuntu-Regular";
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+    font-family: "RobotoCondensed-Regular";
+}
+ul{
+    list-style-type: none;
+}
+a {
+     text-decoration: none;
+     cursor: pointer;
+     color:white;
+ }
+.cistac {
+    clear: both;
+}
+div {
+    display: block;
+}
+#header {
+    width: 100%;
+    height: 11%;
+    top: 0px;
+    left: 0px;
+
+    z-index: 5;
+    color: #f5f5dc;
+    overflow: hidden;
+    transition: 1s;
+    background-color: transparent;
+    position: absolute;
+    padding-top: 2%;
+}
+.okvir {
+    width: 90%;
+    margin: 0px auto;
+    /*border: 2px dotted black;*/
+    position: relative;
+    top: 20%;
+}
+.header-sadrzaj {
+    width: 33%;
+    display: inline-block;
+    font-size: 110%;
+}
+
+.header-sadrzaj ul li a{
+    font-weight: 300;
+    font-family: sans-serif;
+    color: beige;
+
+}
+.header-sadrzaj ul li{
+    display: inline-block;
+    font-size: 100%;
+    margin-right: 20px;
+
+}
+#centralni-deo{
+    text-align: center;
+}
+#centralni-deo ul li a{
+    padding-bottom: 10px;
+}
+#centralni-deo ul li a:hover{
+    border-bottom: 3px solid beige;
+}
+#lista-mreze {
+    text-align: right;
+}
+.okvir a:hover{
+    color: rgba(118, 143, 139, 0.884);
+}
+/*----------------------------------------------------------------------------
+--------------------------------------*/
+.pozadina-slika{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+
+
+}
+#pozadina-slika-levo{
+    color: white;
+    background-color: rgb(12, 19, 31);
+
+}
+#pozadina-slika-levo-content{
+    width: 80%;
+    height: 30%;
+    margin: 0px auto;
+    margin-top: 20%;
+
+}
+#pozadina-slika-levo-content h1 {
+    font-size: 350%;
+}
+#pozadina-slika-levo-content p:first-of-type{
+    margin-top: 12%;
+}
+#pozadina-slika-levo-content p{
+    font-size: 130%;
+    margin-top: 5%;
+}
+#pozadina-slika-desno{
+    float: right;
+    background-image: url(../slike/akcije/pozadina-desno.jpg);
+    background-size: cover;
+    position: relative;
+}
+#tekst{
+    width: 70%;
+    height: 30%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: cornflowerblue;
+}
+#strelica-header{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(93, 121, 116, 0.4);
+    border-radius: 50% 50%;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    padding: 5px;
+
+    z-index: 3;
+}
+#arrow-up {
+    position: absolute;
+    font-size: 90px;
+    color: beige;
+    top: 8px;
+    left: 13px;
+}
+#sredina-gore {
+    position: relative;
+    width: 100%;
+    height: 150%;
+}
+#sredina-gore-naslov {
+    width: 50%;
+    height: 30%;
+    margin: 0px auto;
+    margin-top: 8%;
+    font-size: 140%;
+}
+#sredina-gore-naslov p {
+    margin-top: 5%;
+}
+#sredina-gore-dogadjaji {
+    margin-top: 2%;
+}
+.dogadjaj {
+    width: 85%;
+    height: 13%;
+    margin: 0px auto;
+    border-bottom: 1px dotted grey;
+    font-size: 180%;
+    display: flex;
+    align-items: center;
+}
+.dogadjaj p:nth-child(2){
+    position: absolute;
+    left: 55%;
+
+}
+#sredina-dole{
+    width: 100%;
+    height: 140%;
+    background-color: rgb(12, 19, 31);
+}
+#sredina-dole-naslov{
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 180%;
+}
+#sredina-dole-naslov h1{
+    padding-top: 4%;
+}
+#sredina-dole-slika{
+    width: 25%;
+    height: 45%;
+    background-image: url(../slike/akcije/pozadina-dole.jpg);
+    background-size: cover;
+    margin: 3% auto;
+}
+#sredina-dole-tekst{
+    width: 50%;
+    height: 50%;
+    margin: 0% auto;
+    color: white;
+    text-align: center;
+    font-size: 130%;
+}
+#sredina-dole-tekst p{
+    margin-top: 3%;
+    line-height: 1.5;
+}
+#dugme{
+    padding: 2% 4%;
+    margin-top: 2%;
+    font-size: 80%;
+    background-color: rgb(197, 209, 236);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+}
+input[type=text],input[type=datetime-local],select,input[type="checkbox"]{
+    background-color: beige;
+    margin: 6% 4%;
+    padding: 3%;
+    border-radius: 15px;
+}
+input[type="checkbox"]{
+    margin: 2% 4%;
+}
+input[type=button]{
+    padding: 3%;
+    margin-top: 6%;
+}
+.sidenav table label,.sidenav table{
+    color: beige;
+    font-size: 100%;
+}
+.tekstGreska{
+    color: rgb(170, 33, 33);
+    display: none;
+}
+/*------------------------------------------------------------*/
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 2%; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav
+*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the
+right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/*--------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+-------------------------------*/
+#footer{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(12, 19, 31);
+    position: relative;
+    bottom: 0%;
+
+}
+#footer-okvir{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5%;
+}
+.footer-content {
+    width: 20%;
+    height: 80%;
+}
+#footer-okvir .footer-content:nth-child(4) a{
+    color: white;
+}
+#footer-email{
+    color:white;
+}
+.footer-content ul li a{
+    color: rgb(96, 132, 216);
+}
+.footer-content ul li {
+    padding-top: 3%;
+    color: white;
+    font-size: 90%;
+    text-align: center;
+}
+.footer-ikone{
+    font-size: 100%;
+}
