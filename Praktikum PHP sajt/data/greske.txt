@@ -1,4 +1,0 @@
-/Praktikum PHP sajt/models/signup.php	09-03-2021 16:06:59	::1	PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin12@gmail.com' for key 'email' in C:\xampp\htdocs\Praktikum PHP sajt\models\signup.php:61
-Stack trace:
-#0 C:\xampp\htdocs\Praktikum PHP sajt\models\signup.php(61): PDOStatement->execute()
-#1 {main}
