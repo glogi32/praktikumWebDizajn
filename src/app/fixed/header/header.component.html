@@ -1,0 +1,72 @@
+<div id="pre-header" class="background-gray-lighter">
+    <div class="container no-padding">
+        <div class="row hidden-xs">
+            <div class="col-sm-6 padding-vert-5">
+                <strong>Phone:</strong>&nbsp;1-800-123-4567
+            </div>
+            <div class="col-sm-6 text-right padding-vert-5">
+                <strong>Email:</strong>&nbsp;info@joomla51.com
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Phone/Email -->
+<!-- Header -->
+<div id="header">
+    <div class="container">
+        <div class="row">
+            <!-- Logo -->
+            <div class="logo">
+                <a routerLink="/home" >
+                    <img src="assets/img/logo.png"  alt="Logo" />
+                </a>
+            </div>
+            <!-- End Logo -->
+        </div>
+    </div>
+</div>
+<!-- End Header -->
+<!-- Top Menu -->
+<div id="hornav" class="bottom-border-shadow">
+    <div class="container no-padding border-bottom">
+        <div class="row">
+            <div class="col-md-8 no-padding">
+                <div class="visible-lg">
+                    <ul id="hornavmenu" class="nav navbar-nav">
+                        <li  *ngFor="let m of menu">
+                            <a routerLink="{{m.routerLink}}" [routerLinkActive]="['active']" class="{{m.classIcon}}" >{{m.page}}</a>
+                        </li>
+                        <!-- <li>
+                            <a routerLink="/blog" [routerLinkActive]="['active']" class="fa-font" >Blog</a>
+                        </li>
+
+                        <li>
+                            <a routerLink="/contact" [routerLinkActive]="['active']" class="fa-comment ">Contact</a>
+                        </li>
+                        <li>
+                            <a routerLink="/about-author" [routerLinkActive]="['active']" class="fa-info ">About author</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 no-padding">
+                
+                
+                <div class="visible-lg">
+                    <ul id="hornavmenu" class="nav navbar-nav pull-right">
+                        <li>
+                            <a routerLink="/login" class="fa fa-sign-in" [routerLinkActive]="['active']"  [ngStyle]="{display: loggedUser ? 'none' : 'block'}">Login</a>
+                        </li>
+                        <li>
+                            <a routerLink="/register" class="fa-user" [routerLinkActive]="['active']" [ngStyle]="{display: loggedUser ? 'none' : 'block'}">Sign up</a>
+                        </li>
+                        <li>
+                            <a routerLink="" class="fa-frown-o" (click)="logout()" [ngStyle]="{display: loggedUser ? 'block' : 'none'}">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>

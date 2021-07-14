@@ -1,0 +1,152 @@
+<div id="content">
+    <div class="container background-white">
+        <div class="row margin-vert-30">
+            <!-- Main Column -->
+            <div class="col-md-9">
+                <div class="blog-post">
+                    <div class="blog-item-header">
+                        <h2>
+                            <a >
+                                {{ post.title | titlecase}}
+                            </a>
+                        </h2>
+                        <!-- Date -->
+                        <div class="blog-post-date">
+                            <a >{{post.createdAt | date}}</a>
+                        </div>
+                        <!-- End Date -->
+                    </div>
+                    <div class="blog-post-details">
+                        <!-- Author Name -->
+                        <div class="blog-post-details-item blog-post-details-item-left user-icon">
+                            <i class="fa fa-user color-gray-light"></i>
+                            <a > {{post.author.firstName + " " + post.author.lastName}}</a>
+                        </div>
+                        <!-- End Author Name -->
+                        <!-- Tags -->
+                        <div class="blog-post-details-item blog-post-details-item-left blog-post-details-tags">
+                            <i class="fa fa-tag color-gray-light"></i>
+                            <a >{{post.tags}}</a>
+                        </div>
+                        <!-- End Tags -->
+                        <!-- # of Comments -->
+                        <div class="blog-post-details-item blog-post-details-item-left blog-post-details-item-last">
+                            <a >
+                                <i class="fa fa-comments color-gray-light"></i>
+                                {{post.comments.length}} Comments
+                            </a>
+                        </div>
+                        <!-- End # of Comments -->
+                    </div>
+                    <div class="blog-item">
+                        <div class="clearfix"></div>
+                        <div class="blog-post-body row margin-top-15">
+                            <div class="col-md-5">
+                                <img class="margin-bottom-20" src="{{post.images.medium}}" alt="{{post.images.alt}}">
+                            </div>
+                            <div class="col-md-7">
+                                <p>{{post.content | slice:0:440}}</p>
+                            </div>
+                            <div class="col-md-12">
+                                <p>{{post.content | slice:440}}</p>
+                            </div>
+                        </div>
+                        <div class="blog-item-footer">
+                            <!-- About the Author -->
+                            <div class="blog-author panel panel-default margin-bottom-30">
+                                <div class="panel-heading">
+                                    <h3>About the Author</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img class="pull-left" src="{{post.author.image}}" alt="image1">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <label> {{post.author.firstName + " " + post.author.lastName}} </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End About the Author -->
+                            <!-- Comments -->
+                            <div class="blog-recent-comments panel panel-default margin-bottom-30">
+                                <div class="panel-heading">
+                                    <h3>Comments: {{post.comments.length}}</h3>
+                                </div>
+                                <ul class="list-group">
+                                    <app-show-comments *ngFor="let singleComment of post.comments" [comment]="singleComment">
+                    
+                                    </app-show-comments>
+                                    
+                                    <!-- Comment Form -->
+                                    <li class="list-group-item">
+                                        <div class="blog-comment-form">
+                                            <div class="row margin-top-20">
+                                                <div class="col-md-12">
+                                                    <div class="pull-left">
+                                                        <h3>Leave a Comment</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row margin-top-20">
+                                                <div class="col-md-12" *ngIf="isLogged != null; else elseBlock">
+                                                    <form>
+                                                        <label>Message</label>
+                                                        <div class="row margin-bottom-20">
+                                                            <div class="col-md-11 col-md-offset-0">
+                                                                <textarea class="form-control" rows="8"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <p>
+                                                            <button class="btn btn-primary" type="submit">Send Message</button>
+                                                        </p>
+                                                    </form>
+                                                </div>
+
+                                                <ng-template #elseBlock>
+                                                    <div class="col-md-12">
+                                                        <h2>U must be logged in to post comments!</h2>
+                                                    </div>
+                                                </ng-template>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- End Comment Form -->
+                                </ul>
+                            </div>
+                            <!-- End Comments -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Blog Post -->
+            </div>
+            <!-- End Main Column -->
+            <!-- Side Column -->
+            <div class="col-md-3">
+                <!-- Recent Posts -->
+                <div class="recent-posts">
+                    <h3>Featured Posts</h3>
+                    <ul class="posts-list margin-top-10">
+                        <li *ngFor="let post of featuredPosts">
+                            <div class="recent-post">
+                                <a [routerLink]="['/post',post.id]">
+                                    <img class="pull-left" src="{{post.images.small}}" alt="{{post.images.alt}}">
+                                </a>
+                                <a [routerLink]="['/post',post.id]" class="posts-list-title">{{post.title}}</a>
+                                <br>
+                                <span class="recent-post-date">
+                                    {{post.createdAt | date}}
+                                </span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Recent Posts -->
+                <!-- End Side Column -->
+            </div>
+        </div>
+    </div>
+</div>

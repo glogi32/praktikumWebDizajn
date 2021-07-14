@@ -1,0 +1,94 @@
+<div id="content">
+    <div class="container background-white">
+        
+        <div class="row">
+            <div class="col-md-12 margin-top-15">
+                <form>
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label for="tbSearchPosts">Search posts:</label>
+                        <input type="text" class="form-control" id="tbSearchPosts" name="tbSearch" [(ngModel)]="keyword" (keyup)="searchByKeyword()" placeholder="Search posts by title"  >
+                      </div>
+                      <div class="col-md-2 mb-3">
+                        <label for="validationDefault02">Sort by:</label>
+                        <div class="form-group">
+                            <select name="sortPosts" [(ngModel)]="sort" (change)="sortPosts()" class="custom-select">
+                              <option value="0" selected>Choose...</option>
+                              <option value="1">Lattest</option>
+                              <option value="2">Oldest</option>
+                              <option value="3">Most popular</option>
+                              
+                            </select>
+                          </div>
+                      </div>
+                     
+                    </div>
+                  </form>
+            </div>
+        </div>
+        
+
+        <hr/>
+        <div class="row margin-vert-30">
+            <!-- Main Column -->
+            <div class="col-md-8">
+                <app-show-post *ngFor="let singePost of posts" [post]="singePost"></app-show-post>
+               
+                <!-- Pagination -->
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="" *ngFor="let i of numOfPaginationLinks;let index = index" >
+                        <a href="#" data-id="{{index}}" (click)="paginateItems($event)">{{index+1}}</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+                <!-- End Pagination -->
+            </div>
+            <!-- End Main Column -->
+            <!-- Side Column -->
+            <div class="col-md-4">
+                <!-- Blog Tags -->
+                <div class="blog-tags">
+                    <h3>Tags</h3>
+                    <ul class="blog-tags">
+                        <li *ngFor="let tag of tags">
+                            <label for="{{tag.name}}" class="btn btn-info">{{tag.name}} 
+                                <input type="checkbox" name="tags" id="{{tag.name}}" value="{{tag.id}}" class="badgebox" (change)="filterByTags($event)">
+
+                                <span class="badge"><span>&#10003;</span></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Blog Tags -->
+                <!-- Recent Posts -->
+                <div class="recent-posts">
+                    <h3>Featured Posts</h3>
+                    <ul class="posts-list margin-top-10">
+
+                        <li *ngFor="let post of featuredPosts">
+                            <div class="recent-post">
+                                <a [routerLink]="['/post',post.id]">
+                                    <img class="pull-left" src="{{post.images.small}}" alt="thumb1">
+                                </a>
+                                <a [routerLink]="['/post',post.id]" class="posts-list-title">{{post.title | titlecase }}</a>
+                                <br>
+                                <span class="recent-post-date">
+                                    {{post.createdAt | date}}
+                                </span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>   
+
+                    </ul>
+                </div>
+                <!-- End Recent Posts -->
+            </div>
+            <!-- End Side Column -->
+        </div>
+    </div>
+</div>

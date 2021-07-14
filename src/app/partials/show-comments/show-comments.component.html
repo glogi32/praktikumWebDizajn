@@ -1,0 +1,15 @@
+<li class="list-group-item">
+    <div class="row">
+        <div class="col-md-2 profile-thumb">
+            <a >
+                <img class="media-object" src="{{comment.author.image}}" alt="">
+            </a>
+        </div>
+        <div class="col-md-10">
+            <h4>{{comment.title | titlecase}}</h4>
+            <p>{{comment.content}}</p>
+            <span class="date">
+                <i class="fa fa-clock-o color-gray-light"></i>  {{comment.createdAt | date : "d/L/Y H:m:s "}}</span>
+        </div>
+    </div>
+</li>

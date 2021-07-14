@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 1,
+        "routerLink" : "/home",
+        "classIcon" : "fa-home",
+        "page" : "Home"
+    },
+    {
+        "id" : 2,
+        "routerLink" : "/blog",
+        "classIcon" : "fa-font",
+        "page" : "Blog"
+    },
+    {
+        "id" : 3,
+        "routerLink" : "/contact",
+        "classIcon" : "fa-comment",
+        "page" : "Contact"
+    },
+    {
+        "id" : 4,
+        "routerLink" : "/about-author",
+        "classIcon" : "fa-info",
+        "page" : "Abouth author"
+    }
+]

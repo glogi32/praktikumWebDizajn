@@ -1,0 +1,109 @@
+<div id="slideshow" class="bottom-border-shadow">
+    <div class="container no-padding background-white bottom-border">
+        <div class="row">
+           
+            <div id="carousel-example" class="carousel slide" data-ride="carousel">
+            
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example" data-slide-to="1"></li>
+                    <li data-target="#carousel-example" data-slide-to="2"></li>
+                </ol>
+                <div class="clearfix"></div>
+               
+                <div class="carousel-inner ">
+                    <div class="item " *ngFor="let post of mainPosts" [ngClass]="mainPosts[0]==post ? 'active' : '' ">
+                        <a [routerLink]="['/post',post.id]">
+                            <img src="{{post.images.large}}" alt="{{post.images.alt}}">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>{{post.title}}</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                  
+                </div>
+               
+                <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+             
+            </div>
+        
+        </div>
+    </div>
+</div>
+<div id="icons" class="bottom-border-shadow">
+    <div class="container background-grey bottom-border">
+        <div class="row padding-vert-60">
+            <!-- Icons -->
+            <div class="col-md-4 text-center">
+                <i class="fa-cogs fa-4x color-primary animate fadeIn"></i>
+                <h2 class="padding-top-10 animate fadeIn">Daily updates</h2>
+                <p class="animate fadeIn">Learn something new every day on a variety of topics. Daily updates on all important topics!</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fa-camera fa-4x color-primary animate fadeIn"></i>
+                <h2 class="padding-top-10 animate fadeIn">Popular topics</h2>
+                <p class="animate fadeIn">Discover all the latest about our sports, lifestyle, coulture, music and many more topics on our official blog.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                
+                <i class="fa-bar-chart fa-4x color-primary animate fadeIn"></i>
+                <h2 class="padding-top-10 animate fadeIn">Fastest growing Blog</h2>
+                <p class="animate fadeIn">Our latest results show that people believe in our work!</p>
+            </div>
+            <!-- End Icons -->
+        </div>
+    </div>
+</div>
+<div id="content" class="bottom-border-shadow">
+    <div class="container background-white bottom-border">
+        <div class="row margin-vert-30">
+            <!-- Main Text -->
+            <div class="col-md-6">
+                <h2>Welcome to Habitat Blog</h2>
+                <p>Blogging is story-telling. A good blog design becomes a part of the stories you tell. A simple, austere tech blog can communicate seriousness and clarity. A whimsical, cartoonish parenting blog suggests fun and relatability.
+                    The storytelling quality of a design should never obscure or get in the way of reading the blog. A good blog design tells a story— but is also be conventional and makes reading comfortable (don’t design something so unusual that it confuses readers!). This is a collection of 26 blogs— spanning multiple industries— that I believe are good examples of good blog designs.
+                </p>
+
+                <p>Habitat is a award winning blog and cover the intersection of sport, musics, travel and many more. Our mission is to offer in-depth reporting and long-form feature stories, breaking news coverage, product information, and community content in 
+                    a unified and cohesive manner.</p>
+            </div>
+            <!-- End Main Text -->
+            <div class="col-md-6">
+                <h2 class="padding-vert-10">Key Features</h2>
+                <p>Topics that we cover:</p>
+                <ul class="tick animate fadeInRight">
+                    <li *ngFor="let t of tags">
+                       {{t.name}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio -->
+<div id="portfolio" class="bottom-border-shadow">
+    <div class="container bottom-border">
+        <div class="row padding-top-40">
+            <h2 class="text-center">Featured posts</h2>
+            <ul class="portfolio-group">
+               
+                <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40" *ngFor="let post of featuredPosts">
+                    <a [routerLink]="['/post',post.id]">
+                        <figure class="animate fadeInLeft">
+                            <img alt="{{post.images.alt}}" src="{{post.images.medium}}">
+                            <figcaption>
+                                <h3>{{post.title | titlecase}}</h3>
+                                <span>{{(post.content   | slice:0:130)+"..." }}</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
